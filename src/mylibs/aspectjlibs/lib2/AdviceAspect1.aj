@@ -9,6 +9,6 @@ public aspect AdviceAspect1 {
      */
     public pointcut fooPointcut(Object o): target(o) && call(public java.lang.String foo*(..));
     after (Object o):fooPointcut(o){
-        System.out.println("**************");
+        System.out.println("***** after String foo*(..) method call in "+o.getClass().getName()+"*****");
     }
 }
