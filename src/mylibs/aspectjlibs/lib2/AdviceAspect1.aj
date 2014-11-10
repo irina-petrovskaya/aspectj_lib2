@@ -1,6 +1,6 @@
 package mylibs.aspectjlibs.lib2;
 
-
+ //
 public aspect AdviceAspect1 {
     /**
      * for all public methods with name == foo* and String type
